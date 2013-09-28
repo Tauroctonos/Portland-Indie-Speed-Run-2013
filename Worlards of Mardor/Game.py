@@ -1,4 +1,6 @@
-__author__ = 'Devin'
+__author__ = 'Devin & Stan'
+
+import pygame
 
 ##
 #Game
@@ -16,4 +18,9 @@ class Game(object):
     #
     #
     def __init__(self):
+        pygame.init()
+        size = (500, 500) #(width, height)
+        self.screen = pygame.display.set_mode(size)
 
+
+a = Game()
